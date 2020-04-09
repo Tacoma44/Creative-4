@@ -18,7 +18,8 @@ mongoose.connect('mongodb://localhost:27017/instagram', {
 // Configure multer so that it will upload to '../front-end/public/images'
 const multer = require('multer')
 const upload = multer({
-  dest: '../front-end/public/images/',
+  // dest: '../front-end/public/images/',
+  dest: '/var/www/Creative4.lucassaylor.com/images/',
   limits: {
     fileSize: 10000000
   }
